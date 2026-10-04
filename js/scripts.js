@@ -51,4 +51,11 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Pause portfolio videos when their modal is closed
+    document.querySelectorAll('.portfolio-modal').forEach(modal => {
+        modal.addEventListener('hidden.bs.modal', () => {
+            modal.querySelectorAll('video').forEach(video => video.pause());
+        });
+    });
+
 });

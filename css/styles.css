@@ -11386,6 +11386,10 @@ html {
 #mainNav .navbar-brand {
   color: #fff;
 }
+#mainNav .navbar-brand img {
+  height: 4rem;
+  width: auto;
+}
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
